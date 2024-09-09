@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	data-th-fragment="layout(titrePage, contenuPage,linkcss)">
+<head>
+<meta charset="UTF-8">
+<title data-th-replace="${titrePage}">TP ENI</title>
+<link rel="stylesheet" data-th-href="@{/css/general.css}">
+<link rel="stylesheet" data-th-href="@{/css/layout.css}">
+<link rel="stylesheet" data-th-href="@{/css/tp-table.css}">
+<link data-th-replace="${linkcss}">
+<link rel="icon" data-th-href="@{/images/logoENI.png}" sizes="32x32">
+</head>
+<body>
+	<!-- Navbar -->
+	<header>
+		<img alt="logo" data-th-src="@{/images/logoFilmotheque.png}">
+		<h1 id="nav-title">
+
+			<a href="/">Filmothèque</a
+				<a href="/contexte/deconnexion">Déconnexion</a>
+				<a href="/contexte">Connexion</a>
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="/films">Films</a></li>
+				<li><a href="/films/create">Créer</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="center-main" data-th-replace="${contenuPage}">Contenu
+		vide</main>
+	<footer style="text-align: center">© ENI tous droits réservés</footer>
+</body>
+</html>

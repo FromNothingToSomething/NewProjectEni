@@ -1,0 +1,3 @@
+spring.application.name=demoJDBC
+spring.datasource.url=sa
+spring.datasource.password=Pa$$w0rd

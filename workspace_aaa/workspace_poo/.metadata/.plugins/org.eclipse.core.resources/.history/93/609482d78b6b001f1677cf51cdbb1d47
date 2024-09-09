@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package fr.eni.tp.filmotheque.configuration;
+
+/**
+ * Classe en charge de 
+ * @projet : filmotheque - V1.0
+ * @author : hcovu2024
+ * @since: 5 sept. 2024 - 15:36:19
+ */
+public class SecurityConfig {
+
+}

@@ -1,0 +1,51 @@
+/**
+ * 
+ */
+package fr.eni.demoJDBC;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+/**
+ * Classe en charge de 
+ * @projet : demoJDBC - V1.0
+ * @author : hcovu2024
+ * @since: 2 sept. 2024 - 14:42:30
+ */
+@SpringBootTest
+public class TestJDBCTemplate {
+	@Autowired
+	private JdbcTemplate jdbctemplate;
+
+	/**
+	 * Constructeur.
+	 * @param jdbctemplate
+	 */
+
+	@Test
+	void test_create_table_formateur() {
+		var sql="CREATE TABLE [FORMATEURS]([email] [NVARCHAR](200) PRIMARY KEY,[nom] [NVARCHAR](250) NOT NULL,[prenom] [NVARCHAR](250) NOT NULL) ;";
+		
+		jdbctemplate.execute(sql);
+	}
+	@Test
+	void test_update_table_() {
+		var sql="INSERT INTO [FORMATEURS] ([email],[nom],[prenom]) VALUES ('roger@campus-eni.fr','BAILLE','Anne-Lise');";
+		jdbctemplate.update(sql);
+	}
+	@Test
+	void test_Queryobject() {
+		var sql="Select count(*) from Formateurs";
+		var integer=jdbctemplate.queryForObject(sql,Integer.class);
+		System.out.println("Il y a "+integer+"formateurs en base");
+		assertEquals(2,integer);
+	}
+@Test
+void test_Query_For_List() {
+	var sql="Select * from Formateurs";
+}
+}

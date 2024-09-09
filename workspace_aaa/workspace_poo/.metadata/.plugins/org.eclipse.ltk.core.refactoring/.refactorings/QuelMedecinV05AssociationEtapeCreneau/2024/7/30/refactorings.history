@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;RendezVous.java&apos; to &apos;QuelMedecinV05AssociationEtapeRDV/src/fr.eni.quelmedecin.bo&apos;&#x0D;&#x0A;- Original project: &apos;QuelMedecinV05AssociationEtapeCreneau&apos;&#x0D;&#x0A;- Destination element: &apos;QuelMedecinV05AssociationEtapeRDV/src/fr.eni.quelmedecin.bo&apos;&#x0D;&#x0A;- Original element: &apos;fr.eni.quelmedecin.bo.RendezVous.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=QuelMedecinV05AssociationEtapeRDV/src&lt;fr.eni.quelmedecin.bo" element1="/src&lt;fr.eni.quelmedecin.bo{RendezVous.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1721899356895" units="1" version="1.0"/>
+</session>

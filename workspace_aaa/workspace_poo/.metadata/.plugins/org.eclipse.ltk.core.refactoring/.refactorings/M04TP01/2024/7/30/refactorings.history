@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;M04TP01/src/fr/eni/poo/tp/bo/Launcher (2).java&apos; to &apos;Launcher.java&apos;" description="Rename resource &apos;Launcher (2).java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/fr/eni/poo/tp/bo/Launcher (2).java" name="Launcher.java" stamp="1721916917927" updateReferences="true"/>
+</session>

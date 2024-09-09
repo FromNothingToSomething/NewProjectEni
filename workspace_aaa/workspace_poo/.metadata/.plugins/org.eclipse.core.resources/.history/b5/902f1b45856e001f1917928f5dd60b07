@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package fr.eni.eniencheres.dal;
+
+import java.util.List;
+
+import fr.eni.eniencheres.bo.Utilisateurs;
+
+/**
+ * Classe en charge de 
+ * @projet : EniEncheres - V1.0
+ * @author : hcovu2024
+ * @since: 9 sept. 2024 - 10:24:51
+ */
+public class UtilisateurDAOImpl {
+	
+	private static List<Utilisateurs> utilisateur = new ArrayList<Utilisateurs>();
+
+}

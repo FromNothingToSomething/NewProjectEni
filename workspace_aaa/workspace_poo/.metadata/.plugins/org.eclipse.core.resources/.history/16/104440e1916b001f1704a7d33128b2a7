@@ -1,0 +1,51 @@
+package fr.eni.tp.filmotheque.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.SessionAttributes;
+
+import fr.eni.tp.filmotheque.bo.Membre;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+@SessionAttributes("membreEnSession")
+@RequestMapping("/contexte")
+public class ContexteController {
+	private final ContexteService contexteService;
+
+	public ContexteController(ContexteService contexteService) {
+		super();
+		this.contexteService = contexteService;
+	}
+
+	@ModelAttribute("membreEnSession")
+	public Membre ChargerMembreEnSession() {
+		System.out.println("--Création membre en session--");
+		return new Membre();
+	}
+
+	@GetMapping
+	public String connexion(@RequestParam(name = "email", defaultValue = "jtrillard@campus-eni.fr") String email,
+			@ModelAttribute("membreEnSession") Membre membreEnSession) {
+		var membre = contexteService.charger(email);
+		if (membre != null) {
+			membreEnSession.setAdmin(membre.isAdmin());
+			membreEnSession.setId(membre.getId());
+			membreEnSession.setMotDePasse(membre.getMotDePasse());
+			membreEnSession.setNom(membre.getNom());
+			membreEnSession.setPrenom(membre.getPrenom());
+			membreEnSession.setPseudo(membre.getPseudo());
+		} else
+			membreEnSession.reset();
+		return "index";
+	}
+
+	@GetMapping("/deconnexion")
+	public String deconnexion(@ModelAttribute("membreEnSession") Membre membreEnSession) {
+		membreEnSession.reset();
+		return "index";
+	}
+}

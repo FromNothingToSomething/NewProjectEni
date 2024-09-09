@@ -1,0 +1,8 @@
+1723120737216	Encapsulate field 'nom'
+1723120780517	Encapsulate field 'theme'
+1723120784089	Encapsulate field 'heureOuverture'
+1723120787084	Encapsulate field 'heureFerm'
+1723120939277	Delete element
+1723121434331	Rename package 'fr.eni.barGestion.dao'
+1723121456377	Delete element
+1723126311553	Move compilation unit

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="fr.eni.poo.de.bo.De"/>
+    <fullyQualifiedTypeName name="fr.eni.formation.bo.Stagiaire"/>
+    <fullyQualifiedTypeName name="fr.eni.formation.bo.ModeFinancement"/>
+    <fullyQualifiedTypeName name="fr.eni.annuaire.bo.Utilisateur"/>
+    <fullyQualifiedTypeName name="fr.eni.annuaire.bo.Contact"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="fr.eni.barGestion.dal.BarDao"/>
+    <fullyQualifiedTypeName name="fr.eni.barGestion.dal.tools.SerialiseurBinaire"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="fr.eni.projetspring.bo.Contact"/>
+    <fullyQualifiedTypeName name="fr.formation.serieTele.bo.SerieTele"/>
+    <fullyQualifiedTypeName name="fr.formation.serieTele.ihm.SerieTeleController"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.kafka.KafkaProperties.Admin"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="fr.eni.tennis.bll.tennisService"/>
+    <fullyQualifiedTypeName name="fr.eni.tennis.bo.Score"/>
+    <fullyQualifiedTypeName name="fr.eni.tp.filmotheque.bo.Genre"/>
+    <fullyQualifiedTypeName name="fr.eni.tp.filmotheque.bo.Avis"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="fr.eni.tp.filmotheque.bo.Membre"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.MethodOrderer"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.MethodOrderer.MethodName"/>
+    <fullyQualifiedTypeName name="ch.qos.logback.core.net.server.Client"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.cglib.core.Customizer"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.security.config.Customizer"/>
+    <fullyQualifiedTypeName name="fr.eni.tp.filmotheque.bo.Film"/>
+</qualifiedTypeNameHistroy>

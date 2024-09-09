@@ -1,0 +1,46 @@
+package fr.eni.tp.filmotheque.configuration;
+
+import javax.sql.DataSource;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
+import org.springframework.security.config.Customizer;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.provisioning.JdbcUserDetailsManager;
+import org.springframework.security.provisioning.UserDetailsManager;
+import org.springframework.security.web.SecurityFilterChain;
+
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig {
+
+	@Bean
+	UserDetailsManager getUsers(DataSource source) {
+
+		var manager = new JdbcUserDetailsManager(source);
+		
+		manager.setUsersByUsernameQuery("select email,password,1 from membre where email=?");
+		manager.setAuthoritiesByUsernameQuery("SELECT m.email, r.role FROM ROLES as R JOIN MEMBRE as M ON r.is_admin=m.admin WHERE email=?");
+
+		return manager;
+	}
+
+	@Bean
+	SecurityFilterChain getFilterChain(HttpSecurity security) throws Exception {
+		security.authorizeHttpRequests(auth -> {
+			auth.requestMatchers(HttpMethod.GET, "/films").hasAnyRole("MEMBRE", "ADMIN");
+			auth.requestMatchers(HttpMethod.GET, "/films/create").hasAnyRole("ADMIN");
+			auth.requestMatchers(HttpMethod.GET, "/*").permitAll();
+			auth.requestMatchers(HttpMethod.GET, "/css/*").permitAll();
+			auth.requestMatchers(HttpMethod.GET, "/images/*").permitAll();
+			auth.anyRequest().denyAll();
+		});
+		
+		security.formLogin(Customizer.withDefaults());
+		
+		return security.build();
+	}
+
+}

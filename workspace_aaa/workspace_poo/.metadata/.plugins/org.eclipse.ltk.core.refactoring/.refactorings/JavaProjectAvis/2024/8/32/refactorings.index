@@ -1,0 +1,9 @@
+1723040602646	Encapsulate field 'sujet'
+1723040606421	Encapsulate field 'note'
+1723040610683	Encapsulate field 'commentaire'
+1723040613602	Encapsulate field 'dateAvis'
+1723040616350	Encapsulate field 'auteur'
+1723040749884	Delete element
+1723040987266	Delete element
+1723041021753	Delete element
+1723041168587	Infer generic type arguments

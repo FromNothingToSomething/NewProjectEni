@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;view-film-avis.html&apos; to &apos;view-films.html&apos;&#x0D;&#x0A;- Original project: &apos;filmotheque&apos;&#x0D;&#x0A;- Destination element: &apos;view-films.html&apos;&#x0D;&#x0A;- Original element: &apos;view-film-avis.html&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" element1="src/main/resources/templates/fragments/view-film-avis.html" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1724940982804" target="src/main/resources/templates/view-films.html" units="0" version="1.0"/>
+</session>

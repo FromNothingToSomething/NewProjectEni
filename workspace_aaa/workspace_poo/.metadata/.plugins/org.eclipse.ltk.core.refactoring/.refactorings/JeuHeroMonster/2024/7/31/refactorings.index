@@ -1,0 +1,7 @@
+1722413317111	Extract constant 'MAX_ARMES_UTILISABLES'
+1722417889989	Move compilation unit
+1722426210495	Delete element
+1722427853532	Extract method 'afficherCommunauteHeros'
+1722427877195	Extract method 'afficherMonstrePlateau'
+1722427909286	Extract method 'initialisationHeroPlateauJeu'
+1722427938459	Extract method 'initialiserMonstresPlateauJeu'

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static int diviser(int a, int b)&apos; from &apos;fr.eni.ecole.demo.ihm.Launcher.main(...)&apos; to &apos;fr.eni.ecole.demo.ihm.Launcher&apos;&#x0D;&#x0A;- Original project: &apos;M07DemoExceptionPropager&apos;&#x0D;&#x0A;- Method name: &apos;diviser&apos;&#x0D;&#x0A;- Destination type: &apos;fr.eni.ecole.demo.ihm.Launcher&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;&#x0D;&#x0A;- Generate method comment" comments="true" description="Extract method &apos;diviser&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;fr.eni.ecole.demo.ihm{Launcher.java" name="diviser" replace="false" selection="833 5" stamp="1722434850417" version="1.0" visibility="2"/>
+</session>
